@@ -2,6 +2,14 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
-  p The average person will spend six months of their life waiting for red lights to turn green.
-  button(type="button", class="btn btn-secondary") Press Me
+  p Welcome to #{title} Js
+    p The average person will spend six months of their life waiting for red lights to turn green.
+  button(type="button", class="btn btn-secondary", onclick="update()") Press Me 
+  div(id="target") Display
+  
+  script. 
+    let client_count = 0;
+    function update() {
+      client_count = client_count + 1;
+      document.getElementById("target").innerHTML = `Value now ${client_count}`  ;
+      }
