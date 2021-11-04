@@ -18,7 +18,7 @@ block content
                         "cost": 20
                     },
                     {
-                        "brand": "Louis Philippe",
+                        "brand": "Puma",
                         "material": "cotton",
                         "cost": 30
                     },                   
@@ -27,10 +27,8 @@ block content
                 div(class="col-sm-2" onclick=`buy(${index})`) #{v.brand}
                 div(class="col-sm-2" onclick=`buy(${index})`) #{v.material}
                 div(class="col-sm-2" onclick=`buy(${index})`) #{v.cost}
-
   script.                
     function buy(itemNo)
     {
         alert(`you purchased Item ${itemNo+1}`)
-    }      
- 
+    }                
